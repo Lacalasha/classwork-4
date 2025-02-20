@@ -7,230 +7,173 @@
 .hero-container .daniel-content {
   max-width: 540px;
   width: 100%;
-  padding: 26px 32px 32px;
-  background-color: #733fc8;
-  border-radius: 8px;
   height: 282px;
+  background: linear-gradient(
+    90deg,
+    rgba(167, 117, 241, 1) 0%,
+    rgba(115, 63, 200, 1) 0%
+  );
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px #48556a3f;
 }
-.daniel-content .daniel-personal-content img {
-  width: 28px;
-  height: 28px;
-  border: 2px solid #a775f1;
-  border-radius: 50%;
-}
-.daniel-personal-content,
-.patrick-personal-content {
+.daniel-name,
+.jeanette-name,
+.jonathan-name,
+.patrick-name,
+.kira-name {
   display: flex;
-  align-items: center;
   gap: 17px;
-}
-.jonathan-personal-content {
-  display: flex;
   align-items: center;
-  gap: 17px;
   margin-left: 32px;
 }
-.daniel-personal-content .daniel-name-info {
+.daniel-name-extra,
+.jonathan-name-extra,
+.patrick-name-extra {
   display: flex;
   flex-direction: column;
   gap: 4px;
   font-size: 13px;
-  font-weight: 500;
   color: #ffffff;
+  font-weight: 500;
+  margin-top: 26px;
 }
-.daniel-personal-content .daniel-name-info span {
+.daniel-name-extra span,
+.jonathan-name-extra span,
+.patrick-name-extra span {
   font-size: 11px;
   color: #ffffff50;
 }
-.daniel-content .daniel-comment {
+.daniel-name img,
+.patrick-name img,
+.jonathan-name img,
+.jeanette-content img,
+.kira-name img {
+  margin-top: 26px;
+}
+.comment-secntion-daniel {
   max-width: 476px;
   width: 100%;
-  margin-top: 18px;
-  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 18px 0 0 32px;
   font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
   color: #ffffff;
 }
-.daniel-content .daniel-extra-bs {
-  max-width: 476px;
-  width: 100%;
-  margin-top: 16px;
+.comment-secntion-daniel span {
   font-weight: 500;
   font-size: 13px;
-  color: #cfcfcf;
-  box-shadow: 40px 60px 50px -47px #48556a3f;
+  line-height: 18px;
+  color: #cfcfcf70;
 }
 .hero-container .jonathan-content {
   max-width: 255px;
   width: 100%;
-  padding: 26px 0 32px 0;
+  height: 282px;
   background-color: #48556a;
   box-shadow: 40px 60px 50px -47px #48556a3f;
   border-radius: 8px;
-  height: 282px;
 }
-
-.jonathan-personal-content img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-.jonathan-personal-content .jonathan-name-info {
+.jonathan-content .comment-secntion-jonathan {
+  max-width: 191px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-size: 13px;
-  color: #ffffff;
-  font-weight: 500;
-}
-.jonathan-personal-content .jonathan-name-info span {
-  font-size: 11px;
-  color: #ffffff50;
-}
-.jonathan-content .jonathan-comment {
-  max-width: 191px;
-  width: 100%;
-  color: #ffffff;
+  margin: 18px 0 0 32px;
+  gap: 16px;
   font-weight: 600;
   font-size: 20px;
-  margin-top: 18px;
-  margin-left: 32px;
+  color: #ffffff;
+  line-height: 24px;
 }
-.jonathan-content .jonathan-extra-bs {
-  max-width: 191px;
-  width: 100%;
-  margin-top: 16px;
+.comment-secntion-jonathan span,
+.comment-secntion-patrick span {
   font-weight: 500;
-  color: #ffffff70;
   font-size: 13px;
-  margin-left: 32px;
+  line-height: 18px;
+  color: #ffffff70;
 }
-
 .hero-container .jeanette-content {
   max-width: 255px;
   width: 100%;
-  padding: 26px 0;
   box-shadow: 40px 60px 50px -47px #48556a3f;
-  border-radius: 8px;
   background-color: #ffffff;
   height: 266px;
 }
-.jeanette-personal-content img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-.jeanette-personal-content .jeanette-name-info {
+.jeanette-name-extra,
+.kira-name-extra {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-top: 26px;
   font-weight: 500;
   font-size: 13px;
+  line-height: 13px;
   color: #48556a;
 }
-.jeanette-personal-content {
-  display: flex;
-  align-items: center;
-  gap: 17px;
-  margin-left: 32px;
+.jeanette-name-extra span,
+.kira-name-extra span {
+  font-size: 11px;
+  color: #48556a50;
 }
-.jeanette-content .jeanette-comment {
+.jeanette-content .comment-secntion-jeanette {
   max-width: 191px;
   width: 100%;
-  color: #48556a;
-  font-weight: 600;
-  font: 20px;
   margin: 18px 0 0 32px;
-}
-.jeanette-content .jeanette-extra-bs {
-  max-width: 191px;
-  width: 100%;
-  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
   color: #48556a;
-  margin: 24px 0 0 32px;
 }
-.hero-container .patrick-content {
+.comment-secntion-jeanette span,
+.comment-secntion-kira span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #48556a70;
+}
+.hero-container .patrick-section {
   max-width: 540px;
   width: 100%;
-  box-shadow: 40px 60px 50px -47px #48556a3f;
-  background-color: #19202d;
-  border-radius: 8px;
-  padding: 26px 32px;
   height: 266px;
+  background-color: #19202d;
+  box-shadow: 40px 60px 50px -47px #48556a3f;
+  border-radius: 8px;
 }
-.patrick-personal-content img {
-  width: 28px;
-  height: 28px;
-  border: 2px solid #a775f1;
-  border-radius: 50%;
-}
-.patrick-personal-content .patrick-name-info {
+.patrick-section .comment-secntion-patrick {
+  max-width: 476px;
+  width: 100%;
+  margin: 18px 0 0 32px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-weight: 500;
-  font-size: 13px;
-  color: #ffffff;
-}
-.patrick-personal-content .patrick-name-info span {
-  font-size: 11px;
-  color: #ffffff50;
-}
-.patrick-content .patrick-comment {
-  font-weight: 600;
+  gap: 24px;
   font-size: 20px;
+  font-weight: 600;
   color: #ecf2f8;
-  margin-top: 18px;
+  line-height: 24px;
 }
-.patrick-content .patrick-extra-bs {
-  font-weight: 500;
-  font-size: 13px;
-  color: #ffffff70;
-  margin-top: 24px;
-}
-.hero-container .kira-content {
+.hero-container .kira-section {
   max-width: 255px;
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 40px 60px 50px -47px #48556a3f;
-  border-radius: 8px;
-  padding: 26px 32px 26px 0;
   height: 572px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px #48556a3f;
 }
-.kira-personal-content img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-.kira-personal-content .kira-name-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #48556a;
-}
-.kira-personal-content .kira-personal-content .kira-name-info span {
-  font-weight: 500;
-  font-size: 11px;
-  color: #48556a70;
-}
-.kira-content .kira-comment {
+.kira-section .comment-secntion-kira {
   max-width: 191px;
   width: 100%;
   margin: 18px 0 0 32px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #48556a;
-}
-.kira-personal-content {
   display: flex;
-  align-items: center;
-  gap: 17px;
-  margin-left: 32px;
-}
-.kira-content .kira-extra-bs {
-  font-size: 13px;
-  font-weight: 500;
-  color: #48556a70;
-  margin: 24px 0 0 32px;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #48556a;
 }
