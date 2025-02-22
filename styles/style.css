@@ -1,20 +1,25 @@
+body {
+  background-color: #ecf2f8;
+}
 .hero-container {
   max-width: 1110px;
   width: 100%;
   background-color: #ecf2f8;
   font-family: "Barlow Semi Condensed";
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 164px auto;
+  gap: 24px;
 }
 .hero-container .daniel-content {
-  max-width: 540px;
-  width: 100%;
+  width: 540px;
   height: 282px;
-  background: linear-gradient(
-    90deg,
-    rgba(167, 117, 241, 1) 0%,
-    rgba(115, 63, 200, 1) 0%
-  );
+  background-color: #733fc8;
   border-radius: 8px;
   box-shadow: 40px 60px 50px -47px #48556a3f;
+  grid-area: 1 / 1 / 2 / 3;
+  position: relative;
 }
 .daniel-name,
 .jeanette-name,
@@ -69,12 +74,12 @@
   color: #cfcfcf70;
 }
 .hero-container .jonathan-content {
-  max-width: 255px;
-  width: 100%;
+  width: 255px;
   height: 282px;
   background-color: #48556a;
   box-shadow: 40px 60px 50px -47px #48556a3f;
   border-radius: 8px;
+  grid-area: 1 / 3 / 2 / 4;
 }
 .jonathan-content .comment-secntion-jonathan {
   max-width: 191px;
@@ -96,11 +101,11 @@
   color: #ffffff70;
 }
 .hero-container .jeanette-content {
-  max-width: 255px;
-  width: 100%;
+  width: 255px;
   box-shadow: 40px 60px 50px -47px #48556a3f;
   background-color: #ffffff;
   height: 266px;
+  grid-area: 2 / 1 / 3 / 2;
 }
 .jeanette-name-extra,
 .kira-name-extra {
@@ -138,12 +143,12 @@
   color: #48556a70;
 }
 .hero-container .patrick-section {
-  max-width: 540px;
-  width: 100%;
+  width: 540px;
   height: 266px;
   background-color: #19202d;
   box-shadow: 40px 60px 50px -47px #48556a3f;
   border-radius: 8px;
+  grid-area: 2 / 2 / 3 / 4;
 }
 .patrick-section .comment-secntion-patrick {
   max-width: 476px;
@@ -160,10 +165,11 @@
 .hero-container .kira-section {
   max-width: 255px;
   width: 100%;
-  height: 572px;
+  height: 578px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 40px 60px 50px -47px #48556a3f;
+  grid-area: 1 / 4 / 3 / 5;
 }
 .kira-section .comment-secntion-kira {
   max-width: 191px;
@@ -176,4 +182,105 @@
   font-weight: 600;
   line-height: 24px;
   color: #48556a;
+}
+
+#onceusage {
+  position: absolute;
+  z-index: 1;
+  left: 356px;
+}
+
+#twiceusage {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 375px) {
+  .hero-container {
+    width: 327px;
+    height: 1823px;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-container .daniel-content {
+    width: 327px;
+    height: 444px;
+    grid-area: 1 / 1 / 3 / 2;
+  }
+}
+@media (max-width: 375px) {
+  .daniel-content .comment-secntion-daniel {
+    max-width: 264px;
+    width: 100%;
+    margin-left: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .daniel-content .comment-secntion-daniel span {
+    max-width: 247px;
+    width: 100%;
+    margin-top: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .hero-container .jonathan-content {
+    width: 327px;
+    height: 240px;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+@media (max-width: 375px) {
+  .jonathan-content .comment-secntion-jonathan {
+    max-width: 263px;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .hero-container .jeanette-content {
+    width: 327px;
+    height: 222px;
+    grid-area: 4 / 1 / 5 / 2;
+  }
+}
+@media (max-width: 375px) {
+  .jeanette-content .comment-secntion-jeanette {
+    max-width: 263px;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .hero-container .patrick-section {
+    width: 327px;
+    height: 384px;
+    grid-area: 5 / 1 / 7 / 2;
+  }
+}
+@media (max-width: 375px) {
+  .patrick-section .comment-secntion-patrick {
+    max-width: 263px;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .hero-container .kira-section {
+    max-width: 327px;
+    width: 100%;
+    height: 438px;
+    grid-area: 7 / 1 / 9 / 2;
+  }
+}
+@media (max-width: 375px) {
+  .kira-section .comment-secntion-kira {
+    max-width: 263px;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  #onceusage {
+    left: 199px;
+  }
 }
